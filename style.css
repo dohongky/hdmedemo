@@ -153,11 +153,11 @@
         top: 0;
       }
       .nav-previous a::before {
-        content:"\f060";	
+        content: "";
         left: 10px;
       }
       .nav-next a::before {
-        content:"\f061";
+        content: "";
         right: 10px;
       }
       .nav-previous a::after, .nav-next a::after {
