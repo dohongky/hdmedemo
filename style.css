@@ -554,4 +554,25 @@ a:hover {
         margin-top:15px;
       }
       
-      
+      #main-slider .bx-controls .bx-pager {
+    bottom: 30px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+#main-slider .bx-pager-item a, #message-slider .bx-controls .bx-pager-item a, .project-block-wrap .bx-controls .bx-pager-item a {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 100%;
+    color: transparent;
+    display: block;
+    height: 12px;
+    width: 12px;
+}
+#main-slider .bx-pager-item a:hover, #main-slider .bx-pager-item a.active, #message-slider .bx-controls .bx-pager-item a:hover, #message-slider .bx-controls .bx-pager-item a.active, .project-block-wrap .bx-controls .bx-pager-item a:hover, .project-block-wrap .bx-controls .bx-pager-item a.active {
+    background: #1eb0bc none repeat scroll 0 0;
+}
