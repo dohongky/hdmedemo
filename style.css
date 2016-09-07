@@ -1,8 +1,8 @@
 .navbar-default {
-    background-image: none;
-    background-repeat: repeat-x;
+    background-image: unset;
+    background-repeat: unset;
     border-radius: 0;
-    box-shadow: none;
+    box-shadow: unset;
 }
  .bx-wrapper .bx-next,.bx-wrapper .bx-prev
       {
