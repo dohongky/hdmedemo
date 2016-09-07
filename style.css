@@ -153,11 +153,11 @@
         top: 0;
       }
       .nav-previous a::before {
-        content:&quot;\f060&quot;;	
+        content:"\f060";	
         left: 10px;
       }
       .nav-next a::before {
-        content:&quot;\f061&quot;;
+        content:"\f061";
         right: 10px;
       }
       .nav-previous a::after, .nav-next a::after {
