@@ -436,10 +436,9 @@ a:hover {
         margin: 15px 0 5px;
       }
       .service-title a {
-        color: #222;
-      }
+             }
       .service-title a:hover {
-        color: #109ba5;
+    
       }
       .service-image {
         overflow: hidden;
