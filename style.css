@@ -216,7 +216,7 @@ a {
 }
 a:hover {
     color: #109ba5;
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .navbar-default {
@@ -428,6 +428,13 @@ a:hover {
         line-height: 24px;
         margin: 15px 0 5px;
       }
+	  
+	  .service-title a {
+    color: #222;
+}
+.service-title a:hover {
+    color: #109ba5;
+}
      
       .service-image {
         overflow: hidden;
