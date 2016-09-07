@@ -1,8 +1,230 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-y: scroll;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    background: #fff none repeat scroll 0 0;
+}
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: outside none none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote::before, blockquote::after, q::before, q::after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+a:focus {
+    outline: 0 none;
+}
+a:hover, a:active {
+    outline: 0 none;
+}
+a img {
+    border: 0 none;
+}
+body, button, input, select, textarea {
+    color: #141414;
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    color: #141414;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 26px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}
+p {
+    margin-bottom: 15px;
+}
+b, strong {
+    font-weight: 600;
+}
+dfn, cite, em, i {
+    font-style: italic;
+}
+blockquote {
+    margin: 0 15px;
+}
+address {
+    margin: 0 0 15px;
+}
+pre {
+    background: #eee none repeat scroll 0 0;
+    font-family: "Courier 10 Pitch",Courier,monospace;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
+}
+code, kbd, tt, var {
+    font-family: Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace;
+    font-size: 1.5rem;
+}
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+mark, ins {
+    background: #fff9c0 none repeat scroll 0 0;
+    text-decoration: none;
+}
+sup, sub {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    bottom: 1ex;
+}
+sub {
+    top: 0.5ex;
+}
+small {
+    font-size: 75%;
+}
+big {
+    font-size: 125%;
+}
+hr {
+    background-color: #ccc;
+    border: 0 none;
+    height: 1px;
+    margin-bottom: 15px;
+}
+ul, ol {
+    margin: 0 0 15px 3em;
+}
+ul {
+    list-style: outside none disc;
+}
+ol {
+    list-style: outside none decimal;
+}
+li > ul, li > ol {
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin: 0 15px 15px;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+figure {
+    margin: 0;
+}
+table {
+    margin: 0 0 15px;
+    width: 100%;
+}
+th {
+    font-weight: bold;
+}
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+}
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+}
+button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
+}
+input[type="checkbox"], input[type="radio"] {
+    padding: 0;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #666;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus {
+    color: #111;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
+    padding: 3px;
+}
+textarea {
+    overflow: auto;
+    padding-left: 3px;
+    vertical-align: top;
+    width: 100%;
+}
+a {
+    color: #1eb0bc;
+    outline: 0 none;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+a:hover {
+    color: #109ba5;
+}
+
 .navbar-default {
     background-image: unset;
     background-repeat: unset;
     border-radius: 0;
     box-shadow: unset;
+    background-color: #fff;
+    border-color: #fff;
 }
 
 .thumbnail, .img-thumbnail {
@@ -333,11 +555,9 @@
         background: #f2f2f2 none repeat scroll 0 0;
         padding: 60px 0;
       }
-      .navbar-default {
-        background-color: #fff;
-        border-color: #fff;
-      }
       #bs-example-navbar-collapse-1
       {
         margin-top:15px;
       }
+      
+      
