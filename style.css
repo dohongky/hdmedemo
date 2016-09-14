@@ -249,91 +249,107 @@ a:hover {
         opacity: 1;
         text-shadow: 0 1px 0 #fff;
       }
-      .search-icon {
-        font-size: 14px;
-        margin-left: 21px;
-      }
-      .search-icon a {
-        color: #4b4b4b;
-      }
-      .search-icon a:hover {
-        color: #1eb0bc;
-      }
-      .search-box {
-        background: rgba(30, 176, 188, 0.7) none repeat scroll 0 0;
-        height: 100%;
-        left: 50%;
-        position: fixed;
-        top: 0;
-        transform: translateX(-50%);
-        transition: width 0.3s ease 0.3s, visibility 0s ease 0.8s;
-        visibility: hidden;
-        width: 0;
-        z-index: 999999;
-      }
-      .search-box.active {
-        transition: width 0.3s ease 0s;
-        visibility: visible;
-        width: 100%;
-      }
-      .search-box .search-submit {
-        display: none;
-      }
-      .search-box .searchsubmit {
-        display: none;
-      }
-      .search-box .search-field {
-        -moz-border-bottom-colors: none;
-        -moz-border-left-colors: none;
-        -moz-border-right-colors: none;
-        -moz-border-top-colors: none;
-        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-        border-color: -moz-use-text-color -moz-use-text-color #ffffff;
-        border-image: none;
-        border-style: none none solid;
-        border-width: medium medium 1px;
-        color: #ffffff !important;
-        font-size: 46px;
-        font-style: italic;
-        font-weight: 300;
-        height: 80px;
-        left: 50%;
-        margin-left: -40%;
-        margin-top: -40px;
-        position: absolute;
-        top: 50%;
-        width: 80%;
-      }
-      .search-box .search-field:focus {
-        -moz-border-bottom-colors: none;
-        -moz-border-left-colors: none;
-        -moz-border-right-colors: none;
-        -moz-border-top-colors: none;
-        border-color: -moz-use-text-color -moz-use-text-color #ffffff;
-        border-image: none;
-        border-style: none none solid;
-        border-width: medium medium 1px;
-        box-shadow: none;
-        outline: medium none;
-      }
-      .search-box .search-field::-moz-placeholder {
-        color: #ffffff !important;
-        opacity: 1;
-      }
-      .search-box .close {
-        color: #ffffff;
-        cursor: pointer;
-        display: none;
-        font-size: 180px;
-        font-weight: 300;
-        margin-top: -90px;
-        position: absolute;
-        right: 30px;
-        top: 0;
-      }
-      .search-box.active .close {
-        display: block;
-      }
+      
+/*--------------------------------------------------------------
+	Search Home css
+--------------------------------------------------------------*/
+
+.search-icon{
+	margin-left: 21px;
+	font-size: 14px;
+}
+
+.search-icon a{
+	color: #4b4b4b;
+}
+
+.search-icon a:hover{
+	color: #1eb0bc;
+}
+
+.search-box {
+  left: 50%;
+  position: fixed;
+  width: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition:width 0.3s ease 0.3s, visibility 0s ease 0.8s;
+  -moz-transition:width 0.3s ease 0.3s, visibility 0s ease 0.8s;
+  transition:width 0.3s ease 0.3s, visibility 0s ease 0.8s;
+  background: rgba(30,176,188,0.7);
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+   z-index: 999999;
+}
+
+.search-box.active{
+	width: 100%;
+	visibility: visible;
+	-webkit-transition: width 0.3s ease 0s;
+	-o-transition: width 0.3s ease 0s;
+	transition: width 0.3s ease 0s;
+}
+
+.search-box .search-submit {
+  display: none;
+}
+
+.search-box .searchsubmit {
+  display: none;
+}
+
+.search-box .search-field{
+	position: absolute;
+	top: 50%;
+	height: 80px;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	width: 80%;
+	margin-left: -40%;
+	left: 50%;
+	margin-top: -40px;
+	background: none;
+	color: #ffffff !important;
+	font-size: 46px;
+	font-style: italic;
+	font-weight: 300;
+}
+.search-box .search-field:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+.search-box .search-field::-webkit-input-placeholder {
+    color: #ffffff !important;
+}
+.search-box .search-field::-moz-placeholder {
+    color: #ffffff !important;
+    opacity: 1;
+}
+.search-box .search-field:-ms-input-placeholder {
+    color: #ffffff !important;
+}
+
+.search-box .close {
+	color: #ffffff;
+	font-size: 180px;
+	font-weight: 300;
+	margin-top: -90px;
+	position: absolute;
+	right: 30px;
+	top: 0;
+	cursor: pointer;
+	display: none;
+}
+
+.search-box.active .close{
+	display: block;
+}
       .sidebar .widget {
         box-shadow: 0 0 4px #eeeeee;
         margin: 0 0 25px;
