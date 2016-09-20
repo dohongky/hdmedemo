@@ -428,7 +428,7 @@ a:hover {
       .tagcloud {
         padding-left: 0;
       }
-      .cloud-label-widget-content .label-size a {
+      .cloud-label-widget-content .label-size a,.cloud-label-widget-content .label-size span {
         background: #1eb0bc none repeat scroll 0 0;
         color: #fff;
         display: inline-block;
