@@ -350,7 +350,7 @@ a:hover {
 .search-box.active .close{
 	display: block;
 }
-      .sidebar .widget {
+      .sidebar .widget-content {
         box-shadow: 0 0 4px #eeeeee;
         margin: 0 0 25px;
         padding:10px;
